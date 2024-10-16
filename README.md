@@ -20,9 +20,10 @@ The project consists of 3 files:
 
 ## Installation
 
-1. Download the `maze.c`,`maze.h`, `maze.c` in to a folder.
-2. Prepare one or more text files containing the mazes and put them in the folder.
-3. Open the terminal in a folder.
+1. Download the ZIP file of the project.
+1. Unzip in a folder.
+2. Prepare one or more text files containing the mazes and put them in the same folder.
+3. Open the terminal in the folder.
 4. Compile the project using:
 
 ```bash
