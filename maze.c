@@ -204,7 +204,7 @@ void print_path(int* path, int len_path) {
             printf("RIGHT");
             break;
     }
-    
+    printf("\',");    
     printf("]\n");
 }
 
