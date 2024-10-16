@@ -14,7 +14,7 @@ FILE* get_file(){
         scanf("%s", file_name);
         file = fopen(file_name, "r");
     }
-    //file check and opened
+    //file checked and opened
     printf("File found. Making the grid.\n\n");
     return file;
 }
@@ -42,18 +42,13 @@ int make_maze(Maze* maze, FILE* file) {
 
         *current = tmp;
         current++;
-        maze->width++;
+        maze->width++; //calculating lenght of the first row
 
         tmp = fgetc(file);
     }
 
-    if (maze->width == 0) {
-        printf("File doesn't contain a maze.");
-        return FALSE;
-    }
-
+    //first row initialize, now width is known
     maze->height++;
-    //now, knowing the width, we can initialize the others rows
     while (1) {
         for (int j = 0; j < maze->width; j++, current++) {
             while ((tmp = fgetc(file)) == ' ');
@@ -71,7 +66,7 @@ int make_maze(Maze* maze, FILE* file) {
             }
             *current = tmp;
         }
-        maze->height++;
+        maze->height++; //another row initialized
         while ((tmp = fgetc(file)) == ' ');
         if (tmp == EOF){
             printf("\n");
