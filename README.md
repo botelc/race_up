@@ -72,8 +72,4 @@ A one-dimensional array is chosen to avoid unnecessary spaces between the rows. 
 
 When the endpoint is found, the algorithm terminates. If there are no more places to go, the algorithm returns with a failure.
 
-
-
-
-
-
+The code should be quite readable, with brief comments available in all three files.
