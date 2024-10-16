@@ -28,7 +28,7 @@ The project consists of 3 files:
 4. Compile the project using:
 
 ```bash
-   gcc main.c main.h -o maze
+   gcc main.c maze.c -o maze
 ```
 5. Run the program with:
 
