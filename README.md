@@ -25,14 +25,14 @@ The project consists of 3 files:
 3. Open the terminal in a folder.
 4. Compile the project using:
 
-   ```bash
+```bash
    gcc main.c main.h -o maze
-   ```
+```
 5. Run the program with:
 
-  ```bash
+```bash
   ./maze
-  ```
+```
 6. Follow the instructions.
 
 ### DISCLAIMER - Outdated compiler
