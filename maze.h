@@ -46,14 +46,14 @@ int make_maze(Maze* maze, FILE* file);
 
 
 //interract with the grid
-Point move_point(Point p, int dir);
-Point find_START(Maze maze);
-char get_symbol(Maze* maze, Point p);
-void set_symbol(Maze* maze, Point p, char symbol);
-int is_valid(Maze* maze, Point p);
+Point move_point(Point p, int dir);                  //return the adjacent point based on the given direction
+Point find_START(Maze maze);                         //return point start
+char get_symbol(Maze* maze, Point p);                //return the symbol in that point of the grid
+void set_symbol(Maze* maze, Point p, char symbol);   //change the symbol in that point of the grid
+int is_valid(Maze* maze, Point p);                   //check if point in the grid is in the grid, is passable and has not been visited yet
 
 //search algoritm
-int path_finder(Maze* maze, Point current, int* path, int* len_path);
+int path_finder(Maze* maze, Point current, int* path, int* len_path); //return TRUE if the path if found, FALSE otherwise
 
 //print function
 void print_maze(Maze* maze);
