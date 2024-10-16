@@ -25,11 +25,6 @@ int main() {
         int path[maze.height * maze.width];
         int len_path = 0;
 
-        //quick path finder
-
-        int max_paths = 2*((maze.width > maze.height)? maze.width : maze.height); //max number of paths necessary to find the quickest
-        int (*paths[maze.height * maze.width]);
-
         if(path_finder(&maze, current, path, &len_path)){
             printf("Path found!\n\n");
             print_path(path, len_path);
