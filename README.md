@@ -44,10 +44,10 @@ In the unlikely event that an outdated compiler is used, functionality is not gu
 ## Workflow
 
 1. **File Input**: 
-   - Upon starting the program, the user is prompted to enter the name of a text file containing the maze layout. The program expects the file to be in a specific format.
+   - Upon starting the program, the user is prompted to enter the name of a text file containing the maze layout.
 
 2. **Maze Format**: 
-   - The text file must contain the starting point `S` and the endpoint `E`, along with walls represented by `#` and open paths by `.`. Whitespace and newlines at the beginning or between characters will be ignored.
+   - The text file must contain the starting point `S` and the endpoint `E`, along with walls represented by `#` and open paths by `.`. Whitespace and newlines at the beginning or whitespace between characters will be ignored.
 
 3. **Validation**: 
    - The program will reject any files that contain invalid characters (anything other than `S`, `E`, `.`, `#`, whitespace, and newlines) before the end of the grid. Additionally, any content following a blank line after the maze will be ignored.
