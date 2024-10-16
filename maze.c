@@ -187,7 +187,7 @@ void print_path(int* path, int len_path) {
                 printf("RIGHT");
                 break;
         }
-        printf("\'");
+        printf("\',");
     }
     printf("\'");
     switch (path[len_path -1]) {
@@ -204,7 +204,7 @@ void print_path(int* path, int len_path) {
             printf("RIGHT");
             break;
     }
-    printf("\',");    
+    printf("\'");    
     printf("]\n");
 }
 
